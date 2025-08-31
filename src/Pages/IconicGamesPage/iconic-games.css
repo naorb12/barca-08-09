@@ -1,0 +1,38 @@
+.iconic-moments {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.moment-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding-bottom: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.moment-card h3 {
+  margin: 10px;
+  font-size: 1.2em;
+  align-self: center;
+}
+.moment-card .date {
+  display: block;
+  margin: 0 10px;
+  font-size: 0.9em;
+  color: #cecece;
+}
+.moment-card p {
+  margin: 10px;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+p{
+    width: 50%;
+    justify-self: center;
+    padding: 10px;
+}

@@ -1,0 +1,103 @@
+/* Page centering */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;          /* center horizontally */
+  justify-content: flex-start;  /* keep header on top */
+  gap: 24px;
+  font-family: system-ui, Arial, sans-serif;    
+  background: #0c1fafd8;   
+  color: #fff;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Nav container */
+.navigation {
+  width: 100%;
+  max-width: 1000px;            /* content width */
+  display: grid;
+  gap: 28px;
+}
+
+/* Headline */
+h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+}
+
+/* Lists reset + grid layout for items */
+.information,
+.interactive {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsive boxes */
+  gap: 16px;
+}
+
+/* Optional label above interactive list */
+.interactive > p {
+  grid-column: 1 / -1;
+  margin: 0 0 4px;
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+/* Boxy items */
+.information li,
+.interactive li {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  min-height: 110px;                /* “square-ish” feel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+/* Make the whole box clickable */
+.information li a,
+.interactive li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+/* Hover / focus effects */
+.information li:hover,
+.interactive li:hover,
+.information li:focus-within,
+.interactive li:focus-within {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+/* Small screens tweaks */
+@media (max-width: 520px) {
+  .information,
+  .interactive {
+    grid-template-columns: 1fr 1fr;   /* two per row on mobile */
+  }
+  .interactive > p {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+}

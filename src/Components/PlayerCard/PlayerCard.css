@@ -1,0 +1,12 @@
+.player-card {
+    width: 80px;
+    
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+}

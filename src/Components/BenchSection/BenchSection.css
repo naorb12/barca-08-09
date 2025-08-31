@@ -1,0 +1,16 @@
+.bench-section {
+    max-height: 65vh;   /* הגבלה לגובה */
+   overflow: auto;     /* סקרול פנימי */
+   overscroll-behavior: contain;
+    background-color: aliceblue;
+    padding: 5px;
+    width: 30vw;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 6px;
+    justify-content: start;
+    justify-items: center;
+    align-items: start;
+}
+
