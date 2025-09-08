@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/barca-08-09/static/css/main.b8d3028d.css",
-    "main.js": "/barca-08-09/static/js/main.18d60c44.js",
+    "main.js": "/barca-08-09/static/js/main.70002645.js",
     "static/js/453.96453769.chunk.js": "/barca-08-09/static/js/453.96453769.chunk.js",
     "index.html": "/barca-08-09/index.html",
     "main.b8d3028d.css.map": "/barca-08-09/static/css/main.b8d3028d.css.map",
-    "main.18d60c44.js.map": "/barca-08-09/static/js/main.18d60c44.js.map",
+    "main.70002645.js.map": "/barca-08-09/static/js/main.70002645.js.map",
     "453.96453769.chunk.js.map": "/barca-08-09/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8d3028d.css",
-    "static/js/main.18d60c44.js"
+    "static/js/main.70002645.js"
   ]
 }
